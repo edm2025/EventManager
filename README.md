@@ -1,7 +1,7 @@
 # EventManager
 
 STEP-BY-STEP EXPLANATION
-✅ 1. Install Prerequisites
+1. Install Prerequisites
 a. Node.js
 Node.js is the JavaScript runtime needed to run the backend code.
 
@@ -15,7 +15,7 @@ PostgreSQL is the database used to store data for the application.
 📥 You can download and install PostgreSQL from: https://www.postgresql.org/download/
 
 
-✅ 2. Setup Database
+2. Setup Database
 After installing PostgreSQL:
 
 Open pgAdmin or any other DB GUI
@@ -34,7 +34,7 @@ Password
 
 Database name (eventdb, for example)
 
-✅ 3. Configure Environment Variables
+3. Configure Environment Variables
 In the root folder (same level as package.json), create a file named .env
 
 Add this to the .env file (adjust values accordingly):
@@ -47,7 +47,7 @@ SESSION_SECRET=your_secure_random_string
 REPLIT_DOMAINS=localhost,127.0.0.1
 REPL_ID=local_development
 
-✅ 4. Install Dependencies
+4. Install Dependencies
 Open your terminal or command prompt
 
 Navigate to the project directory:
@@ -64,7 +64,7 @@ Edit
 npm install
 This will install all the libraries required for the app.
 
-✅ 5. Initialize Database Schema
+5. Initialize Database Schema
 This command sets up the tables in your PostgreSQL database:
 
 bash
@@ -73,7 +73,7 @@ Edit
 npm run db:push
 This usually uses Prisma or an ORM (Object-Relational Mapper) to push the schema defined in the project files to your database.
 
-✅ 6. Start the Application
+6. Start the Application
 Run:
 
 bash
@@ -86,7 +86,7 @@ arduino
 Copy
 Edit
 http://localhost:5000
-✅ 7. Login Setup
+7. Login Setup
 The app is set up for Replit authentication, which is meant for deployment on Replit.com.
 
 For local use, it may not work unless you:
@@ -94,4 +94,7 @@ For local use, it may not work unless you:
 Replace Replit login with something like email/password or Google OAuth
 
 OR register a Replit OAuth client and simulate authentication (complex)
+
+
+
 
